@@ -16,7 +16,7 @@ of soil μCT images using classical image processing methods.
   - Otsu thresholding
     
 <p align="center">
-  <img src="Picture3.png" alt="Otsu segmentation" width="500">
+  <img src="Picture3.png" alt="Otsu segmentation" width="700">
 </p>
 
 ## Data availability
@@ -26,7 +26,7 @@ The repository contains only example outputs and scripts.
 Example slice μCT image slice from the soil dataset acquired at Mishmar HaNegev (pixel size: 5.8 μm)
 
 <p align="center">
-  <img src="Picture2.png" alt="Raw µCT slice" width="600">
+  <img src="Picture2.png" alt="Raw µCT slice" width="500">
 </p>
 
 ## Scripts
