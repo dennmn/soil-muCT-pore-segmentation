@@ -20,7 +20,7 @@ The μCT dataset is unpublished and cannot be shared publicly.
 The repository contains only example outputs and scripts.
 
 ## Example slice
-![Raw µCT slice](Picture3.png)
+![Raw µCT slice](Picture2.png)
 
 ## Scripts
 
