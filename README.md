@@ -3,7 +3,7 @@
 This repository contains code and notebooks for automatic pore–solid segmentation
 of soil μCT images using classical image processing methods.
 
-![Workflow for estimating soil water retention behavior from μCT-derived pore structure](Picture1.png)
+![Workflow for estimating soil water retention behavior from μCT-derived pore structure](Picture1.png){width=400}
 
 ## Project overview
 - Dataset: grayscale soil μCT images (≈8,000 slices)
@@ -13,14 +13,15 @@ of soil μCT images using classical image processing methods.
   - Preprocessing (normalization, bit-depth conversion, filtering)
   - Otsu thresholding
 
-![Otsu segmentation](Picture3.png)
+![Otsu segmentation](Picture3.png){width=400}
 
 ## Data availability
 The μCT dataset is unpublished and cannot be shared publicly.
 The repository contains only example outputs and scripts.
 
-## Example slice
-![Raw µCT slice](Picture2.png)
+Example slice
+Example μCT image slice from the soil dataset acquired at Mishmar HaNegev (pixel size: 5.8 μm)
+![Raw µCT slice](Picture2.png){width=400}
 
 ## Scripts
 
