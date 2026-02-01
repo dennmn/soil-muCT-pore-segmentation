@@ -3,7 +3,7 @@
 This repository contains code and notebooks for automatic pore–solid segmentation
 of soil μCT images using classical image processing methods.
 
-<p align="center">
+<p align="left">
   <img src="Picture1.png" alt="Workflow for estimating soil water retention behavior from μCT-derived pore structure" width="400">
 </p>
 
