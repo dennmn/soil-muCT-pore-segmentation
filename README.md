@@ -14,6 +14,9 @@ of soil μCT images using classical image processing methods.
 - Methods:
   - Preprocessing (normalization, bit-depth conversion, filtering)
   - Otsu thresholding
+  - Z-stability correction pipeline
+  - Conservative and aggressive correction modes
+  - Pore Size Distribution (PSD) analysis
     
 <p align="center">
   <img src="Picture3.png" alt="Otsu segmentation" width="700">
@@ -28,6 +31,14 @@ Example slice μCT image slice from the soil dataset acquired at Mishmar HaNegev
 <p align="center">
   <img src="Picture2.png" alt="Raw µCT slice" width="500">
 </p>
+
+## Results
+
+- Vertical stability improved after Z-correction.
+- Highest Dice similarity observed in Bnei Reem.
+- Broadest PSD observed in Rehovot sandy loam.
+- Aggressive correction increased vertical coherence but modified more voxels.
+
 
 ## Scripts
 
