@@ -400,9 +400,7 @@ stages:
 
 - [ ] Direct Python imports for Z-stability and PSD (eliminate subprocess overhead)
 - [ ] Unified configuration validation across all modules
-- [ ] Parallel stage execution where dependencies allow
-- [ ] Comprehensive logging with structured output (JSON logs)
-- [ ] Progress reporting with estimated time remaining
+- [ ] nnUNet training based on low supervision masks from this module+ human annotated multi-class segmentation
 
 ### Verified Bug Fixes
 
