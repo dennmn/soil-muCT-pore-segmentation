@@ -39,18 +39,16 @@ Example slice μCT image slice from the soil dataset acquired at Mishmar HaNegev
 - Broadest PSD observed in Rehovot sandy loam.
 - Aggressive correction increased vertical coherence but modified more voxels.
 
-<p align="left">
-  <img src="graph1.png" alt="Raw µCT slice" width="300">
+<p align="center">
+  <img src="graph1.png" width="300" style="margin-right:10px;">
+  <img src="graph2.png" width="300">
 </p>
-<p align="right">
-  <img src="graph2.png" alt="Raw µCT slice" width="300">
+
+<p align="center">
+  <img src="graph3.png" width="300" style="margin-right:10px;">
+  <img src="graph4.png" width="300">
 </p>
-<p align="left">
-  <img src="graph3.png" alt="Raw µCT slice" width="300">
-</p>
-<p align="right">
-  <img src="graph4.png" alt="Raw µCT slice" width="300">
-</p>
+
 
 ## Scripts
 
