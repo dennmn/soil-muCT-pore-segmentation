@@ -42,15 +42,12 @@ Example slice μCT image slice from the soil dataset acquired at Mishmar HaNegev
 <p align="left">
   <img src="graph1.png" alt="Raw µCT slice" width="300">
 </p>
-
 <p align="right">
   <img src="graph2.png" alt="Raw µCT slice" width="300">
 </p>
-
 <p align="left">
   <img src="graph3.png" alt="Raw µCT slice" width="300">
 </p>
-
 <p align="right">
   <img src="graph4.png" alt="Raw µCT slice" width="300">
 </p>
