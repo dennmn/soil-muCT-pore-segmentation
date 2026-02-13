@@ -1,0 +1,64 @@
+scan_dir: data/dummy_scan/images
+scan_id: dummy_scan
+stages:
+  preprocessing:
+    enabled: true
+    overwrite: false
+
+  segmentation:
+    enabled: true
+    method: multiotsu
+    n_classes: 2
+    save_overlay: false
+    extensions:
+      - ".png"
+
+  z_stability:
+    enabled: true
+    config_path: config/z_stability/pipeline.yaml
+    definition:
+      windows:
+        short: 3
+        long: 7
+      target_class: 1
+      thresholds:
+        conservative:
+          min_short_frequency: 0.6
+          max_flip_rate: 2
+          min_long_frequency: 0.3
+          min_component_size: 10
+        aggressive:
+          min_short_frequency: 0.4
+          max_flip_rate: 3
+          min_long_frequency: 0.2
+          min_component_size: 5
+      compute:
+        use_gpu_metrics: false
+        validate_gpu_metrics: false
+      output:
+        save_diagnostic_maps: false
+        create_subfolder_per_scan: true
+
+  binary_builder:
+    enabled: true
+    mask_variant: aggressive
+
+  psd:
+    enabled: true
+    entrypoint: core.analysis.pores_analysis.psd_entrypoint
+    default_run_id: dummy_scan_psd
+    image_params:
+      voxel_spacing:
+        - 15.0
+        - 15.0
+        - 15.0
+    processing_thresholds:
+      min_reliable_diameter_voxels: 5
+      border_width: 1
+      use_gpu: false
+      use_chunking: false
+    output_settings:
+      export_formats:
+        - json
+      metadata:
+        scan_id: dummy_scan

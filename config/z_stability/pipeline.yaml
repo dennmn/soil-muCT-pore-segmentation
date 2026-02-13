@@ -1,0 +1,24 @@
+data:
+  scan_folder:  '/content/drive/MyDrive/soil_microCT_images/ROI/bnei_reem/bnei_reem_ROI_8bit_partial_preproc/masks_pure_otsu'
+windows:
+  short: 3
+  long: 7
+target_class: 1
+thresholds:
+  conservative:
+    min_short_frequency: 0.6
+    max_flip_rate: 2
+    min_long_frequency: 0.3
+    min_component_size: 10
+  aggressive:
+    min_short_frequency: 0.4
+    max_flip_rate: 3
+    min_long_frequency: 0.2
+    min_component_size: 5
+compute:
+  use_gpu_metrics: true
+  validate_gpu_metrics: true
+output:
+  save_diagnostic_maps: true
+  output_folder: "z_stability_results"
+  create_subfolder_per_scan: true

@@ -1,0 +1,38 @@
+paths:
+  base_drive_path: /content/drive/MyDrive/soil_microCT_images
+  input_volume_relative_path: ROI/z_stability_results/bnei_reem/binary_pores.npy
+  output_dir: ROI/psd_results_bnei_reem
+  checkpoint_dir: checkpoints
+  default_run_id: scan_001_psd
+
+image_params:
+  voxel_spacing:
+    - 15.0
+    - 15.0
+    - 15.0
+
+processing_thresholds:
+  min_reliable_diameter_voxels: 5
+  border_width: 1
+  use_gpu: true
+  use_chunking: false
+  chunk_size:
+    - 128
+    - 128
+    - 128
+  halo_width: 50
+  bin_edges_um: null
+  exclude_border_pores: true
+  resume_from_checkpoint: true
+  checkpoint_compression: true
+  checkpoint_auto_backup: true
+
+output_settings:
+  export_formats:
+    - csv
+    - json
+  metadata:
+    scan_id: scan_001
+    sample_name: soil_core_A1
+    acquisition_date: 2026-02-03
+    notes: Agricultural soil, 0-5cm depth

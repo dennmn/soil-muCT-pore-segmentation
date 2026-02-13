@@ -1,0 +1,38 @@
+scan_dir: /content/drive/MyDrive/soil_microCT_images/ROI/rehovot/rehovot_partial_16bit_otsu2
+scan_id: rehovot_test_2class
+
+stages:
+
+  preprocessing:
+    enabled: true
+    overwrite: false
+
+  segmentation:
+    enabled: true
+    method: multiotsu
+    n_classes: 2
+
+  z_stability:
+    enabled: false   # מכובה לחלוטין
+
+  binary_builder:
+    enabled: true
+    mask_variant: direct   # נשתמש בפלט הסגמנטציה ישירות
+
+  psd:
+    enabled: true
+    entrypoint: core.analysis.pores_analysis.psd_entrypoint
+    
+    image_params:
+      voxel_spacing: [15, 15, 15]
+
+    processing_thresholds:
+      min_radius_um: 5
+      max_radius_um: 2000
+
+    output_settings:
+      save_histogram: true
+      save_local_thickness: true
+      save_summary: true
+
+    default_run_id: rehovot_psd_test
